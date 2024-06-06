@@ -1,10 +1,11 @@
-.container {
+.container { /*Create a container with two rows and two columns for the div classes to snap to */
     display: grid;
-    grid-template-columns: 50% 50%; /* Two columns with automatic sizing */
-    gap: 5px; /* Gap between rows and columns */
-    height: 100vh; /* Full viewport height */
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    height: 100vh;
   }
 
+  /*Navbar Style*/
   ul {
     list-style-type: none;
     margin: 0;
@@ -29,11 +30,12 @@
     background-color: #111;
   }
 
+  /*Body STyle*/
 html,body{
     width: 100%;
     height: 100%;
-    margin: 0; /* Space from this element (entire page) and others*/
-    padding: 0; /*space from content and border*/
+    margin: 0;
+    padding: 0;
     border: solid white;
     border-width: 0px;
     overflow:hidden;
@@ -44,7 +46,7 @@ html,body{
 body {
     overflow-y: scroll;
 }
-
+/*Packing list and Inventory Style*/
 #packinglist {
     text-align: center;
     width: 100%;
@@ -61,19 +63,19 @@ body {
     margin: 2px;
 }
 
-.draggable {
+.draggable { /*Style applied to the draggable item divs*/
     margin: 5px;
     padding: 5px;
     border: 1px solid black;
 }
 
-#totalweight {
+#totalweight { /*Style applied to the totalweight label*/
     text-align: center;
     width: 100%;
     height: 300px;
 }
 
-#piechart {
+#piechart { /*Style applied to the pie chart*/
     text-align: center;
     width: 100%;
     height: 300px;
