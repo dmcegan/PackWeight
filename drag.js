@@ -34,7 +34,7 @@ var counter = 1;
 
 function addInput(){ //Adds a draggable div class whenever the add input button in the inventory is pressed
   var newdiv = document.createElement('div');
-  newdiv.innerHTML = "<div class='draggable' draggable='true' ondragstart='drag(event)' type='text' id="+counter+"> <input type='text' class='category-input' value='Category 1' onchange='updateChart();'><input type='number' min='0' class='data-input' data-category='Category 1' value='10' onchange='updateChart(); updateTotalWeight();'> <input type='button' value='-' onClick='this.parentNode.remove(); updateChart(); updateTotalWeight();'></div>";
+  newdiv.innerHTML = "<div class='draggable' draggable='true' ondragstart='drag(event)' type='text' id="+counter+"> <input type='text' class='category-input' placeholder='Item Name' onchange='updateChart();'><input type='number' min='0' class='data-input' data-category='Category 1' value='10' onchange='updateChart(); updateTotalWeight();'> <input type='button' value='-' onClick='this.parentNode.remove(); updateChart(); updateTotalWeight();'></div>";
   document.getElementById('inventory').appendChild(newdiv);
   counter++;
 }
