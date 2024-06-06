@@ -1,0 +1,80 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%; /* Two columns with automatic sizing */
+    gap: 5px; /* Gap between rows and columns */
+    height: 100vh; /* Full viewport height */
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Space from this element (entire page) and others*/
+    padding: 0; /*space from content and border*/
+    border: solid white;
+    border-width: 0px;
+    overflow:hidden;
+    display:block;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+#packinglist {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    margin: 2px;
+  }
+
+#inventory {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+.draggable {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#totalweight {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+
+#piechart {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}

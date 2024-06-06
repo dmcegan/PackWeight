@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>PackWeight</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="piechart.js"></script>
+    <script src="drag.js"></script>
+  </head>
+  <nav>
+    <ul>
+      <li>
+        <a href="packweight.html">PackWeight</a>
+      </li>
+      <li>
+        <a href="packweight.html">Home</a>
+      </li>
+      <li>
+        <a href="docs.html">Docs</a>
+      </li>
+    </ul>
+  </nav>
+  <body>
+    <div class="container">
+    <div id="piechart"></div>
+    <label id="totalweight">Total Weight: 0     </label>
+
+  <div id="packinglist" ondragover="allowDrop(event)" ondrop="PackingListDrop(event); updateTotalWeight(); updateChart(); updateTotalWeight();">
+    <h2>Packing List</h2>
+  </div>
+
+  <div id="inventory" ondrop="InventoryDrop(event); updateTotalWeight(); updateChart(); updateTotalWeight();" ondragover="allowDrop(event)">
+    <h2>Inventory</h2><input type="button" value="Add Item to Inventory" onClick="addInput();">
+  </div>
+
+</div>
+</body>
+</html>
