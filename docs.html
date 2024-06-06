@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>PackWeight</title>
+    <link rel="icon" href="piechart.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="piechart.js"></script>
+    <script src="drag.js"></script>
+  </head>
+  <nav> <!--Create navbar-->
+    <ul>
+      <li>
+        <a href="packweight.html">PackWeight</a> <!--Navbar Button 1 leads to the homepage-->
+      </li>
+      <li>
+        <a href="packweight.html">Home</a>  <!--Navbar Button 2 leads to the homepage-->
+      </li>
+      <li>
+        <a href="docs.html">Docs</a>  <!--Navbar Button 3 leads to the documentation page-->
+      </li>
+    </ul>
+  </nav>
+  <body>
+    <h3>PackWeight Documentation</h3>
+    <p>To access the home page of this website, click the "Home" button in the navbar above</p>
+    <br>
+    <p>The pie chart in the top left and the “Total Weight” in the top right will update with the items dragged into the “Packing List” section. To create a new item, click the “Add new item to inventory” button in the inventory box.
+
+        Once an item has been created, the inventory should appear like this:
+        </p>
+
+    <img src="packweight with added items.png" alt="Items added to Inventory Box">
+
+    <p>Click into the Item name box to assign each item a name, and change the number in the next box to assign a value to the item. This value could represent kilograms, grams, pounds or even a number of items. Any unit of measurement can be used as long as it remains constant for every item. The “-” button can be used to remove unnecessary items. Once items have been edited, the inventory should look like this:
+    </p>
+
+    <img src="packweight values added.png" alt="Items with values added to Inventory Box">
+
+    <p>These items are in your inventory, and so won't affect the pie chart. To change the pie chart and total weight counter, simply drag the items into the box to the left of the inventory labelled “Packing List”. The pie chart and total weight should then update to reflect the values assigned to each item.
+    </p>
+
+    <img src="packweight values added.png" alt="Items with values added to Inventory Box">
+
+    <p>The mouse can be hovered over each slice of the pie chart to display the item name, weight and the percentage of the total that it occupies.
+    </p>
+
+    <img src="packweight hover over pie chart.png" alt="You can hover over the pie chart to see extra information">
+
+    <h4>Troubleshooting:</h4>
+    <p>Q. I entered a value in the value box, but the pie chart hasn't updated, what do I do?
+        A. Try clicking out of the value box so the program knows you have finished editing. The box also doesn't allow non-numeric characters to be added, so ensure that you are only entering numerals or a single decimal place.
+        
+        Q. My pie chart or total weight isn't updating
+        A. Click out of the box you are currently editing so that the program knows that you are finished editing. 
+        Ensure that the item is in the “Packing list” box, as items in the inventory won't update the pie chart or total weight.
+        Drag the item out and back into the “Packing list” box to re-update the pie chart and total weight
+        
+        Q. I accidentally clicked the remove item button, can I restore the item?
+        A. Unfortunately removed items cannot be restored, click the “Add new item” button to create a new item and re-input the values
+        
+        Q. How do I edit the “Item name” box?
+        A. All you have to do is click into the box, and the box will clear and be available to type in.
+        
+        Q. What values can I enter into the item value box?
+        A. Any numerical value with or without decimal places can be added into the Item Value box. Please note that the final weight is rounded to 2 decimal places.</p>
+
+
+  </body>
+</html>
