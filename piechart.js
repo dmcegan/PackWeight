@@ -42,10 +42,6 @@ function updateTotalWeight() {
   for (var i = 0; i < data.getNumberOfRows(); i++) {
     totalweight += data.getValue(i, 1);
   }
-  document.getElementById('totalweight').innerHTML = "Total Weight: " + totalweight + "     ";
+  roundedtotalweight = totalweight.toFixed(2);
+  document.getElementById('totalweight').innerHTML = "Total Weight: " + roundedtotalweight + "     ";
 }
-
-//setInterval(function() {
-  // code to be executed repeatedly
-//  updateTotalWeight();
-//}, 200);
