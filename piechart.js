@@ -1,15 +1,15 @@
 var data, options, chart; //Initialise variables for use later
 var index = 0;
 
-// Load google charts
+// Load google charts using google charts syntax
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 index = 0;
 
 function drawChart() {
   data = new google.visualization.DataTable(); //Create new data table for the values entered into the pie chart
-  data.addColumn('string', 'Item');
-  data.addColumn('number', 'Weight');
+  data.addColumn('string', 'Item'); //Add an "Item" column to the data table
+  data.addColumn('number', 'Weight'); //Add a "Weight" column to the data table
 
   var startingdata = [['Item1', 10], ['Item2', 20], ['Item3', 30]] //Set the values for the initial data
 
@@ -24,7 +24,7 @@ function drawChart() {
 }
 
 function updateChart() { 
-  var newData = [];
+  var newData = []; //Create a storage location for the new data
   var dataInputs = document.querySelectorAll('.data-input.chart'); //Identifies all Item value inputs
   var categoryInputs = document.querySelectorAll('.category-input.chart'); //Identifies all Item name inputs
   
@@ -39,9 +39,9 @@ function updateChart() {
 
 function updateTotalWeight() {
   totalweight = 0; //Reset total weight to 0
-  for (var i = 0; i < data.getNumberOfRows(); i++) { //For every row in the data table, add the value to totalweight
+  for (var i = 0; i < data.getNumberOfRows(); i++) { //For every row in the pie chart's data table, add the value to totalweight
     totalweight += data.getValue(i, 1);
   }
   roundedtotalweight = totalweight.toFixed(2); //Round the value to 2 d.p. to eliminate binary floating point errors
-  document.getElementById('totalweight').innerHTML = "Total Weight: " + roundedtotalweight + "     "; //Update the totalweight label
+  document.getElementById('totalweight').innerHTML = "Total Weight: " + roundedtotalweight; //Update the totalweight label
 }
