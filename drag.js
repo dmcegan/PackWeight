@@ -32,7 +32,7 @@ var counter = 1; //Counter to set unique item ids
 
 function addInput(){ //Adds a draggable div class whenever the add input button in the inventory is pressed
   var newdiv = document.createElement('div'); //Creates a new div element
-  newdiv.innerHTML = "<div class='draggable' draggable='true' ondragstart='drag(event)' type='text' id="+counter+"> <input type='text' class='category-input' placeholder='Item Name' onchange='updateChart();'><input type='number' min='0' class='data-input' data-category='Category 1' value='10' onchange='updateChart(); updateTotalWeight();'> <input type='button' value='-' onClick='this.parentNode.remove(); updateChart(); updateTotalWeight();'></div>"; //Set's the new div's code to include a text input, a number input and a 'remove' button
+  newdiv.innerHTML = "<div class='draggable' draggable='true' ondragstart='drag(event)' type='text' id="+counter+"> <input type='text' class='category-input' placeholder='Item Name' onchange='updateChart();'><input type='number' min='0' class='data-input' value='10' onchange='updateChart(); updateTotalWeight();'> <input type='button' value='-' onClick='this.parentNode.remove(); updateChart(); updateTotalWeight();'></div>"; //Set's the new div's code to include a text input, a number input and a 'remove' button
   document.getElementById('inventory').appendChild(newdiv); //Make the new div a child of the 'inventory' div
   counter++; //Increment the counter for the next unique id
 }

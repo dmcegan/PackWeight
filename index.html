@@ -28,11 +28,11 @@
       <div id="piechart"></div> <!--Create the div that the piechart will be generated in-->
       <label id="totalweight">Total Weight: 0</label>  <!--Create the 'Total Weight' Label-->
 
-      <div id="packinglist" ondragover="allowDrop(event)" ondrop="PackingListDrop(event); updateTotalWeight(); updateChart(); updateTotalWeight();"> <!--Create the "Packing list" div that triggers the update every time a div is dropped into it-->
+      <div id="packinglist" ondragover="allowDrop(event)" ondrop="PackingListDrop(event); updateChart(); updateTotalWeight();"> <!--Create the "Packing list" div that triggers the update every time a div is dropped into it-->
         <h2>Packing List</h2> <!--Label in the Packing List div-->
       </div>
 
-      <div id="inventory" ondrop="InventoryDrop(event); updateTotalWeight(); updateChart(); updateTotalWeight();" ondragover="allowDrop(event)"> <!--Create the "Inventory" div that triggers the update every time a div is dropped into it-->
+      <div id="inventory" ondragover="allowDrop(event)" ondrop="InventoryDrop(event); updateChart(); updateTotalWeight();"> <!--Create the "Inventory" div that triggers the update every time a div is dropped into it-->
         <h2>Inventory</h2><input type="button" value="Add Item to Inventory" onClick="addInput();"> <!--Label and add item button in the Inventory div-->
       </div>
     </div>

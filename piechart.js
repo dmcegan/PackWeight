@@ -1,5 +1,4 @@
-var data, options, chart; //Initialise variables for use later
-var index = 0;
+var data, options, chart, index; //Initialise variables for use later
 
 // Load google charts using google charts syntax
 google.charts.load('current', {'packages':['corechart']});
